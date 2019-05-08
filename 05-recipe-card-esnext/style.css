@@ -3,16 +3,6 @@
  * editor-specific styles using the same selectors will take precedence.
  */
 
-div {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	color: red;
-	align-content: center;
-	text-align: center;
-	border: 1px solid gray;
-}
-
 
 
 .wp-block-gutenberg-examples-example-05-recipe-card-esnext .recipe-image {
@@ -56,4 +46,14 @@ div {
 	content:""; 
 	clear:both; 
 	display: table; 
+}
+
+.wp-block-gutenberg-examples-example-05-recipe-card-esnext {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	color: red;
+	align-content: center;
+	text-align: center;
+	border: 1px solid gray;
 }
