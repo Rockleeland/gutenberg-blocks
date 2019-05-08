@@ -1,7 +1,8 @@
 const { __, setLocaleData } = wp.i18n;
 const { registerBlockType } = wp.blocks;
 const { RichText } = wp.editor;
-// import styled from 'styled-components'
+import { PreviewContainer } from './editor'
+import { EditContainer } from './style'
 
 // const EditContainer = styled.div`
 // 	.wp-block-gutenberg-examples-example-03-editable-esnext {
@@ -29,21 +30,21 @@ registerBlockType( 'gutenberg-examples/example-03-editable-esnext', {
 			setAttributes( { content: newContent } );
 		};
 		return (
-			// <EditContainer>
+			<PreviewContainer>
 				<RichText
 					tagName="p"
 					className={ className }
 					onChange={ onChangeContent }
 					value={ content }
 				/>
-			// </EditContainer>
+			</PreviewContainer>
 		);
 	},
 	save: ( props ) => {
 		return (
-			// <EditContainer>
+			<EditContainer>
 				<RichText.Content tagName="p" value={ props.attributes.content } />
-			// </EditContainer>
+			</EditContainer>
 		)
 	},
 } );

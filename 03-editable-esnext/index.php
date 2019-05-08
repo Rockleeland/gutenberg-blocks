@@ -43,16 +43,16 @@ function gutenberg_examples_03_esnext_register_block() {
 
 	wp_register_style(
 		'gutenberg-examples-03-esnext-editor',
-		plugins_url( 'editor.css', __FILE__ ),
+		plugins_url( 'editor.js', __FILE__ ),
 		array( 'wp-edit-blocks' ),
-		filemtime( plugin_dir_path( __FILE__ ) . 'editor.css' )
+		filemtime( plugin_dir_path( __FILE__ ) . 'editor.js' )
 	);
 
 	wp_register_style(
 		'gutenberg-examples-03-esnext',
-		plugins_url( 'style.css', __FILE__ ),
+		plugins_url( 'style.js', __FILE__ ),
 		array( ),
-		filemtime( plugin_dir_path( __FILE__ ) . 'style.css' )
+		filemtime( plugin_dir_path( __FILE__ ) . 'style.js' )
 	);
 
 	register_block_type( 'gutenberg-examples/example-03-editable-esnext', array(
