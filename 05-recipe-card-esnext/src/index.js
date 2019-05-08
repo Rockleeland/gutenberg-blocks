@@ -6,10 +6,12 @@ const { Button } = wp.components;
 import styled from 'styled-components';
 
 const BioCard = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  color: red;
+	.wp-block-gutenberg-examples-example-05-recipe-card-esnext{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		color: red;
+	}
 `;
 
 registerBlockType("gutenberg-examples/example-05-recipe-card-esnext", {
