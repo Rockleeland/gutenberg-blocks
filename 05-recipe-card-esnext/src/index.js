@@ -14,6 +14,10 @@ const BioCard = styled.div`
 		align-content: center;
 		text-align: center;
 	}
+
+	.wp-block-gutenberg-examples-example-05-recipe-card-esnext .recipe-image {
+		background: white;
+	}
 `;
 
 registerBlockType("gutenberg-examples/example-05-recipe-card-esnext", {
