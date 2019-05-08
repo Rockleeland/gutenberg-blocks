@@ -11,6 +11,8 @@ const BioCard = styled.div`
 		justify-content: center;
 		flex-direction: column;
 		color: red;
+		align-content: center;
+		text-align: center;
 	}
 `;
 
