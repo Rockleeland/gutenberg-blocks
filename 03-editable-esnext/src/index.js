@@ -1,16 +1,16 @@
 const { __, setLocaleData } = wp.i18n;
 const { registerBlockType } = wp.blocks;
 const { RichText } = wp.editor;
-import styled from 'styled-components'
+// import styled from 'styled-components'
 
-const EditContainer = styled.div`
-	.wp-block-gutenberg-examples-example-03-editable-esnext {
-		color: white;
-		background: lightgray;
-		border: 2px solid gray;
-		padding: 20px;
-}
-`;
+// const EditContainer = styled.div`
+// 	.wp-block-gutenberg-examples-example-03-editable-esnext {
+// 		color: white;
+// 		background: lightgray;
+// 		border: 2px solid gray;
+// 		padding: 20px;
+// }
+// `;
 
 registerBlockType( 'gutenberg-examples/example-03-editable-esnext', {
 	title: __( 'Block: Editable', 'gutenberg-examples' ),
@@ -29,21 +29,21 @@ registerBlockType( 'gutenberg-examples/example-03-editable-esnext', {
 			setAttributes( { content: newContent } );
 		};
 		return (
-			<EditContainer>
+			// <EditContainer>
 				<RichText
 					tagName="p"
 					className={ className }
 					onChange={ onChangeContent }
 					value={ content }
 				/>
-			</EditContainer>
+			// </EditContainer>
 		);
 	},
 	save: ( props ) => {
 		return (
-			<EditContainer>
+			// <EditContainer>
 				<RichText.Content tagName="p" value={ props.attributes.content } />
-			</EditContainer>
+			// </EditContainer>
 		)
 	},
 } );
