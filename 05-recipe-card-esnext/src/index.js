@@ -143,7 +143,7 @@ registerBlockType("gutenberg-examples/example-05-recipe-card-esnext", {
               )}
             />
           </div>
-          <h3>{__("Summary", "gutenberg-examples")}</h3>
+          <h3>{__("ingredients", "gutenberg-examples")}</h3>
           <RichText
             tagName="ul"
             multiline="li"
@@ -155,7 +155,7 @@ registerBlockType("gutenberg-examples/example-05-recipe-card-esnext", {
             onChange={onChangeIngredients}
             className="ingredients"
           />
-          <h3>{__("Bio", "gutenberg-examples")}</h3>
+          <h3>{__("steps", "gutenberg-examples")}</h3>
           <RichText
             tagName="div"
             multiline="p"
