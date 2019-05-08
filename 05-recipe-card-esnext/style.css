@@ -3,57 +3,73 @@
  * editor-specific styles using the same selectors will take precedence.
  */
 
-
-
 .wp-block-gutenberg-examples-example-05-recipe-card-esnext .recipe-image {
-	background: white;
-	float: right;
-	width: 50%;
-	min-height: 100px;
-	text-align: center;
+  background: white;
+  width: 100%;
+  height: auto;
+  min-height: 100px;
+  max-height: 300px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
 }
 
-.wp-block-gutenberg-examples-example-05-recipe-card-esnext .recipe-image button {
-	margin-top: 30px;
+.wp-block-gutenberg-examples-example-05-recipe-card-esnext
+  .recipe-image
+  button {
+  margin-top: 30px;
 }
 
-.wp-block-gutenberg-examples-example-05-recipe-card-esnext .recipe-image button.image-button {
-	margin: 0;
-	padding: 0;
-	display: block;
+.wp-block-gutenberg-examples-example-05-recipe-card-esnext
+  .recipe-image
+  button.image-button {
+  margin: 0;
+  padding: 0;
+  display: block;
 }
 
 .wp-block-gutenberg-examples-example-05-recipe-card-esnext .recipe-image img {
-	display: block;
-	z-index: 1;
-	position: relative;
+  display: block;
+  z-index: 1;
+  position: relative;
 }
 
 .wp-block-gutenberg-examples-example-05-recipe-card-esnext h2 {
-	font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .wp-block-gutenberg-examples-example-05-recipe-card-esnext h3 {
-	color: black;
-	font-size: 2em;
+  color: black;
+  font-size: 2em;
 }
 
 .wp-block-gutenberg-examples-example-05-recipe-card-esnext ul {
-	padding-left: 2.5em !important; /* Needs fix in Gutenberg. */
+  padding-left: 2.5em !important; /* Needs fix in Gutenberg. */
 }
 
-.wp-block-gutenberg-examples-example-05-recipe-card-esnext:after { 
-	content:""; 
-	clear:both; 
-	display: table; 
+.wp-block-gutenberg-examples-example-05-recipe-card-esnext:after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .wp-block-gutenberg-examples-example-05-recipe-card-esnext {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	color: red;
-	align-content: center;
-	text-align: center;
-	border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: red;
+  align-content: center;
+  text-align: center;
+  border: 1px solid gray;
+}
+
+h1:not(.site-title):before,
+h2:before {
+  background: white;
+  content: "\020";
+  display: block;
+  height: 2px;
+  margin: 0;
+  width: 0;
 }
