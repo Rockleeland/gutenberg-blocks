@@ -1,16 +1,14 @@
-# Gutenberg Examples
+Custom Gutenberg blocks made with gutenberg-examples and styled components.
 
-<p align="center"><img src="https://user-images.githubusercontent.com/1039236/47116000-fd775000-d27d-11e8-9c46-761a90cb30a2.gif" alt="Demo"></p>
-
-
-Examples for extending
-[Gutenberg](https://github.com/WordPress/gutenberg)
+Examples for extending Wordpress gutenberg-examples
+[Gutenberg-examples](hhttps://github.com/WordPress/gutenberg-examples)
 with plugins which create blocks.
 
-See also:
-[Gutenberg developer documentation](https://wordpress.org/gutenberg/handbook/)
-
 ## Installation
+
+Go to the `wp-content/plugins` folder and `git clone https://github.com/Rockleeland/gutenberg-blocks.git`.
+
+OR
 
 Gutenberg Examples are distributed as WordPress plugin.
 
@@ -40,7 +38,7 @@ To bring up this local WordPress instance run:
 docker-compose up -d
 ```
 
-The WordPress should be available at http://localhost:9999
+The WordPress should be available at http://localhost:3003
 
 To stop this local WordPress instance later run:
 
@@ -65,4 +63,3 @@ To build a development version of the plugin and watch changes for automatic reb
 npm start
 ```
 
-<br/><br/><p align="center"><img src="https://s.w.org/style/images/codeispoetry.png?1" alt="Code is Poetry." /></p>
