@@ -50,9 +50,9 @@ function gutenberg_examples_03_esnext_register_block() {
 
 	wp_register_style(
 		'gutenberg-examples-03-esnext',
-		plugins_url( 'style.js', __FILE__ ),
+		plugins_url( 'style.css', __FILE__ ),
 		array( ),
-		filemtime( plugin_dir_path( __FILE__ ) . 'style.js' )
+		filemtime( plugin_dir_path( __FILE__ ) . 'style.css' )
 	);
 
 	register_block_type( 'gutenberg-examples/example-03-editable-esnext', array(
