@@ -3,60 +3,60 @@ const { registerBlockType } = wp.blocks;
 const { RichText, MediaUpload } = wp.editor;
 const { Button } = wp.components;
 
-import styled from "styled-components";
+// import styled from "styled-components";
 
-const BioCard = styled.div`
-  .wp-block-gutenberg-examples-example-05-recipe-card-esnext {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color: red;
-    align-content: center;
-    text-align: center;
-  }
+// const BioCard = styled.div`
+//   .wp-block-gutenberg-examples-example-05-recipe-card-esnext {
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column;
+//     color: red;
+//     align-content: center;
+//     text-align: center;
+//   }
 
-  .wp-block-gutenberg-examples-example-05-recipe-card-esnext .recipe-image {
-    background: white;
-    float: right;
-    width: 50%;
-    min-height: 100px;
-    text-align: center;
-  }
+//   .wp-block-gutenberg-examples-example-05-recipe-card-esnext .recipe-image {
+//     background: white;
+//     float: right;
+//     width: 50%;
+//     min-height: 100px;
+//     text-align: center;
+//   }
 
-  .wp-block-gutenberg-examples-example-05-recipe-card-esnext
-    .recipe-image
-    button {
-    margin-top: 30px;
-  }
+//   .wp-block-gutenberg-examples-example-05-recipe-card-esnext
+//     .recipe-image
+//     button {
+//     margin-top: 30px;
+//   }
 
-  .wp-block-gutenberg-examples-example-05-recipe-card-esnext
-    .recipe-image
-    button.image-button {
-    margin: 0;
-    padding: 0;
-    display: block;
-  }
+//   .wp-block-gutenberg-examples-example-05-recipe-card-esnext
+//     .recipe-image
+//     button.image-button {
+//     margin: 0;
+//     padding: 0;
+//     display: block;
+//   }
 
-  .wp-block-gutenberg-examples-example-05-recipe-card-esnext .recipe-image img {
-    display: block;
-    z-index: 1;
-    position: relative;
-  }
+//   .wp-block-gutenberg-examples-example-05-recipe-card-esnext .recipe-image img {
+//     display: block;
+//     z-index: 1;
+//     position: relative;
+//   }
 
-  .wp-block-gutenberg-examples-example-05-recipe-card-esnext h2 {
-    font-size: 1.5em;
-  }
+//   .wp-block-gutenberg-examples-example-05-recipe-card-esnext h2 {
+//     font-size: 1.5em;
+//   }
 
-  .wp-block-gutenberg-examples-example-05-recipe-card-esnext ul {
-    padding-left: 2.5em !important; /* Needs fix in Gutenberg. */
-  }
+//   .wp-block-gutenberg-examples-example-05-recipe-card-esnext ul {
+//     padding-left: 2.5em !important; /* Needs fix in Gutenberg. */
+//   }
 
-  .wp-block-gutenberg-examples-example-05-recipe-card-esnext:after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-`;
+//   .wp-block-gutenberg-examples-example-05-recipe-card-esnext:after {
+//     content: "";
+//     clear: both;
+//     display: table;
+//   }
+// `;
 
 registerBlockType("gutenberg-examples/example-05-recipe-card-esnext", {
   title: __("Block: Bio Card", "gutenberg-examples"),
@@ -113,7 +113,7 @@ registerBlockType("gutenberg-examples/example-05-recipe-card-esnext", {
     };
 
     return (
-      <BioCard>
+      // <BioCard>
         <div className={className}>
           <RichText
             tagName="h2"
@@ -165,7 +165,7 @@ registerBlockType("gutenberg-examples/example-05-recipe-card-esnext", {
             onChange={onChangeInstructions}
           />
         </div>
-      </BioCard>
+      // </BioCard>
     );
   },
   save: props => {
