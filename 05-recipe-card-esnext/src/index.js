@@ -136,7 +136,6 @@ registerBlockType("gutenberg-examples/example-05-recipe-card-esnext", {
       attributes: { title, mediaURL, ingredients, instructions }
     } = props;
     return (
-			<BioCard>
 				<div className={className}>
 					<RichText.Content tagName="h2" value={title} />
 
@@ -160,7 +159,6 @@ registerBlockType("gutenberg-examples/example-05-recipe-card-esnext", {
 						value={instructions}
 					/>
 				</div>			
-			</BioCard>
     );
   }
 });
