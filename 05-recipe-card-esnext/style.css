@@ -3,14 +3,17 @@
  * editor-specific styles using the same selectors will take precedence.
  */
 
- .wp-block-gutenberg-examples-example-05-recipe-card-esnext{
+div {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	color: red;
 	align-content: center;
 	text-align: center;
+	border: 1px solid gray;
 }
+
+
 
 .wp-block-gutenberg-examples-example-05-recipe-card-esnext .recipe-image {
 	background: white;
@@ -38,6 +41,11 @@
 
 .wp-block-gutenberg-examples-example-05-recipe-card-esnext h2 {
 	font-size: 1.5em;
+}
+
+.wp-block-gutenberg-examples-example-05-recipe-card-esnext h3 {
+	color: black;
+	font-size: 2em;
 }
 
 .wp-block-gutenberg-examples-example-05-recipe-card-esnext ul {
