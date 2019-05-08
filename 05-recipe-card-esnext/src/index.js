@@ -114,57 +114,54 @@ registerBlockType("gutenberg-examples/example-05-recipe-card-esnext", {
 
     return (
       // <BioCard>
-        <div className={className}>
-          <RichText
-            tagName="h2"
-            placeholder={__("Write Recipe title…", "gutenberg-examples")}
-            value={title}
-            onChange={onChangeTitle}
-          />
-          <div className="recipe-image">
-            <MediaUpload
-              onSelect={onSelectImage}
-              allowedTypes="image"
-              value={mediaID}
-              render={({ open }) => (
-                <Button
-                  className={mediaID ? "image-button" : "button button-large"}
-                  onClick={open}
-                >
-                  {!mediaID ? (
-                    __("Upload Image", "gutenberg-examples")
-                  ) : (
-                    <img
-                      src={mediaURL}
-                      alt={__("Upload Recipe Image", "gutenberg-examples")}
-                    />
-                  )}
-                </Button>
-              )}
-            />
-          </div>
-          <h3>{__("ingredients", "gutenberg-examples")}test1</h3>
-          <RichText
-            tagName="ul"
-            multiline="li"
-            placeholder={__(
-              "Write a list of ingredients…",
-              "gutenberg-examples"
+      <div className={className}>
+        <RichText
+          tagName="h2"
+          placeholder={__("Write Recipe title…", "gutenberg-examples")}
+          value={title}
+          onChange={onChangeTitle}
+        />
+        <div className="recipe-image">
+          <MediaUpload
+            onSelect={onSelectImage}
+            allowedTypes="image"
+            value={mediaID}
+            render={({ open }) => (
+              <Button
+                className={mediaID ? "image-button" : "button button-large"}
+                onClick={open}
+              >
+                {!mediaID ? (
+                  __("Upload Image", "gutenberg-examples")
+                ) : (
+                  <img
+                    src={mediaURL}
+                    alt={__("Upload Recipe Image", "gutenberg-examples")}
+                  />
+                )}
+              </Button>
             )}
-            value={ingredients}
-            onChange={onChangeIngredients}
-            className="ingredients"
-          />
-          <h3>{__("steps", "gutenberg-examples")}test2</h3>
-          <RichText
-            tagName="div"
-            multiline="p"
-            className="steps"
-            placeholder={__("Write the instructions…", "gutenberg-examples")}
-            value={instructions}
-            onChange={onChangeInstructions}
           />
         </div>
+        <h3>{__("ingredients", "gutenberg-examples")}</h3>
+        <RichText
+          tagName="ul"
+          multiline="li"
+          placeholder={__("Write a list of ingredients…", "gutenberg-examples")}
+          value={ingredients}
+          onChange={onChangeIngredients}
+          className="ingredients"
+        />
+        <h3>{__("steps", "gutenberg-examples")}</h3>
+        <RichText
+          tagName="div"
+          multiline="p"
+          className="steps"
+          placeholder={__("Write the instructions…", "gutenberg-examples")}
+          value={instructions}
+          onChange={onChangeInstructions}
+        />
+      </div>
       // </BioCard>
     );
   },
@@ -176,7 +173,6 @@ registerBlockType("gutenberg-examples/example-05-recipe-card-esnext", {
     return (
       <div className={className}>
         <RichText.Content tagName="h2" value={title} />
-
         {mediaURL && (
           <img
             className="recipe-image"
@@ -184,13 +180,13 @@ registerBlockType("gutenberg-examples/example-05-recipe-card-esnext", {
             alt={__("Recipe Image", "gutenberg-examples")}
           />
         )}
-
+        <h3>{__("Summary", "gutenberg-examples")}</h3>
         <RichText.Content
           tagName="h2"
           className="ingredients"
           value={ingredients}
         />
-
+        <h3>{__("Bio", "gutenberg-examples")}</h3>
         <RichText.Content
           tagName="div"
           className="steps"
