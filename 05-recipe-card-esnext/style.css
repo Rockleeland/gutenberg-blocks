@@ -66,10 +66,10 @@
 
 h1:not(.site-title):before,
 h2:before {
-  background: white;
-  content: "\020";
-  display: block;
+  background: white !important;
+  content: "\020" !important;
+  display: none !important;
   height: 2px;
-  margin: 0;
-  width: 0;
+  margin: 0 !important;
+  width: 0 !important;
 }
