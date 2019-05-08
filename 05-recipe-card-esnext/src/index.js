@@ -3,6 +3,8 @@ const { registerBlockType } = wp.blocks;
 const { RichText, MediaUpload } = wp.editor;
 const { Button } = wp.components;
 
+import styled from 'styled-components';
+
 const BioCard = styled.div`
   display: flex;
   justify-content: center;
